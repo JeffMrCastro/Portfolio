@@ -433,9 +433,7 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: fixed;
-    top:0;
-    left: 0;
+   
 
 }
 
