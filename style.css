@@ -253,6 +253,7 @@ header{
 
 
 .my__projects{
+    cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     min-width: 30px;
