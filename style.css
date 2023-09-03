@@ -14,7 +14,7 @@
 header{
     flex-wrap: wrap;
     display: flex;
-    padding: 70px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     background-color: #01020f;
