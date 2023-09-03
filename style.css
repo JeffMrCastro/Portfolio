@@ -66,8 +66,11 @@ header{
 
 .menu a:hover{
     color: #9815cc7a;
+   
 }
+
 /*-------------------*/
+
 .container__apresentacão{
     background-image: url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
 
@@ -179,7 +182,7 @@ header{
 }
 
 
-
+/*-------------------*/
 
 
 #sobre{
@@ -230,7 +233,7 @@ header{
 }
 
 
-
+/*-------------------*/
 
 
 
@@ -288,7 +291,7 @@ header{
 }
 
 
-
+/*-------------------*/
 
 
 
@@ -414,6 +417,9 @@ header{
         width: 50%;
     }
 }
+
+/*-------------------*/
+
 
 #contatos{
     background-color: #01020f;
