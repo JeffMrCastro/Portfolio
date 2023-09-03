@@ -70,7 +70,7 @@ header{
 }
 /*-------------------*/
 .container__apresentacão{
-    background-image: url(/assets.img/back-fundo.jpeg);
+    background-image: url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
 
     background-size: cover;
     display: flex;
