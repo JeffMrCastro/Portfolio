@@ -9,10 +9,7 @@
     font-family: 'Inconsolata', monospace;
 
 }
-body {
-    background-image: url(assets.img/back-fundo.jpeg);]
-    background-size: cover;
-}
+
 /*-------------------*/
 header{
     flex-wrap: wrap;
@@ -73,7 +70,7 @@ header{
 }
 /*-------------------*/
 .container__apresentacão{
-    background-image: url(/assets/img/back-fundo.jpeg);
+    background-image: url(/assets.img/back-fundo.jpeg);
 
     background-size: cover;
     display: flex;
