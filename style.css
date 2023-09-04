@@ -79,7 +79,7 @@ header{
 
 /*-------------------*/
 
-.container__apresentacão{
+.container__apresentacao{
     background: linear-gradient(rgba(154, 29, 192, 0.356), rgba(0, 0, 0, 0.815) 100%), url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
 
     background-size: cover;
@@ -93,7 +93,7 @@ header{
 }
 
 
-.apresentação{
+.apresentacao{
     width: 980px;
     text-align: center;
     white-space: nowrap;
