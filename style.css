@@ -80,7 +80,7 @@ header{
 /*-------------------*/
 
 .container__apresentacão{
-    background-image: url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
+    background: linear-gradient(rgba(154, 29, 192, 0.356), rgba(0, 0, 0, 0.815) 100%), url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
 
     background-size: cover;
     display: flex;
