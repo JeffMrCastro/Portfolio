@@ -13,19 +13,16 @@
 /*-------------------*/
 
 header{
-    
+    margin: 0;
     display: flex;
     width: 100%;
     position: fixed;
     flex-wrap: wrap;
-
-    padding: 20px;
+    border:1px  solid #2c0725c2;
+    
     justify-content: center;
     align-items: center;
     background-color: #01020f;
-    border:1px  solid #2c0725c2;
-    
-    
    
 }
 .box__header{
@@ -79,24 +76,25 @@ header{
 
 /*-------------------*/
 
-.container__apresentação{
-    background: linear-gradient(rgba(154, 29, 192, 0.356), rgba(0, 0, 0, 0.815) 100%), url(https://github.com/JeffMrCastro/portfolio-two/blob/main/assets.img/back-fundo.jpeg?raw=true);
-
+.container__apresentacão{
+    background: linear-gradient(rgba(201, 142, 219, 0.301), rgba(0, 0, 0, 0.719) 100%), url(/assets.img/back-fundo.jpeg );
     background-size: cover;
     display: flex;
-    align-items: center;
-   
-    justify-content: space-around;
-   
-    padding: 400px;
+    justify-content: center;
+    height: 98vh;
     flex-wrap: wrap;
+    width: 100%;
+   
 }
 
 
 .apresentação{
-    width: 980px;
+    margin-top: 14rem;
+    width: 100%;
+    align-items: center;
     text-align: center;
     white-space: nowrap;
+    
 }
 
 
