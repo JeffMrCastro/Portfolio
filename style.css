@@ -365,6 +365,21 @@ header{
     }
     
 }
+@media screen and (max-width:390px){
+    .dowload__cv{
+        width: 40%;
+    }
+    .dowload__cv a{
+        font-size: 15px;
+    }
+    .acess__lkd{
+        font-size: 15px; 
+        width: 40%;
+
+    }
+    
+
+}
 
 
 
@@ -587,6 +602,12 @@ header{
 
     
 }
+@media screen and (max-width:390px) {
+    #box__hability{
+        width: 100%;
+        height: 200vh;
+    }
+}
 
 
 
@@ -733,6 +754,25 @@ header{
     .ico__ct img{
         width: 30px;
 
+    }
+    
+}
+@media screen and (max-width:390px) {
+    #contatos{
+        width: 100%;
+        height: 100vh;
+    }
+    .container__contatos{
+        width: 100%;
+        display: flex;
+
+    }
+    .ico__ct img{
+        width: 30px;
+
+    }
+    #contatos p{ 
+        font-size: 15px;
     }
     
 }
