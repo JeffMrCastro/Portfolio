@@ -790,6 +790,11 @@ header{
 
 }
 
+.top{
+    background: transparent;
+    
+}
+
 
 .top a p{
     right: 10px;
