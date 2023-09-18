@@ -197,7 +197,7 @@ header{
 /*-------------------*/
 
 #container__apresentacão{
-    background: linear-gradient(rgba(201, 142, 219, 0.301), rgba(0, 0, 0, 0.719) ), url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/back-fundo.jpeg?raw=true );
+    background: linear-gradient(rgba(236, 217, 241, 0.356), rgba(36, 35, 35, 0.205) ), url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/back-fundo.jpeg?raw=true );
     background-size: cover;
     display: flex;
     justify-content: center;
