@@ -812,7 +812,7 @@ header{
     
 }
 .branco#pag #container__apresentacão{
-    background: linear-gradient(rgba(201, 142, 219, 0.301), rgba(0, 0, 0, 0.719) ), url(assets.img/back__fundo__sol.jpg);
+    background: linear-gradient(rgba(201, 142, 219, 0.301), rgba(0, 0, 0, 0.719) ), url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/back__fundo__sol.jpg?raw=true);
     background-size: cover;
     box-shadow: 5px 10px 28px 1px rgba(51, 1, 39, 0.815), 0 10px 10px rgba(0, 0, 0, 0.22) ;
     border-radius:10px ;
