@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;900&display=swap');
 
+:root {
+    --back--body--header:#0e0c1a;
+    --border--color:#380427;
+    --back--menu-mobile:#02050f;
+    --menu--hover: #9815cc7a;
+    --colorfff:#fff;
+    --color000: #000;
+}
 
 
 *{  
@@ -14,8 +22,8 @@
 }
 body{
     width: 100%;
-    transition: background 1s;
-    background-color: #0e0c1a;
+    transition: background 800ms;
+    background-color: var(--back--body--header);
     
 
 }
@@ -26,13 +34,14 @@ header{
     top: 0;
     z-index: 1;
     width: 100%;
-   display: flex;
-   position: fixed;
-   align-items: center;
-   text-align: center;
-   justify-content: center;
-   background-color: #0c0d1a;
-   border-bottom:  1px solid #380427;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--back--body--header);
+    border-bottom:  1px solid var(--border--color);
+    padding: 1rem;
    
    
     
@@ -40,13 +49,6 @@ header{
 }
 
 
-
-
-.logo:hover{
-    transform: scale(1.5,1.5);
-    
-
-}
 
 
 .menu{
@@ -78,13 +80,13 @@ header{
 .menu a{
     font-weight: 300;
     font-size: 25px;
-    color: #fff;
+    color: var(--colorfff);
     
 
 }
 
 .menu a:hover{
-    color: #9815cc7a;
+    color: var(--menu--hover);
 }
 .menu__mobile{
     margin-top: 90px;
@@ -93,7 +95,7 @@ header{
     
     
     padding: 0 0 200%;
-    background-color:#02050f;
+    background-color: var(--back--menu-mobile);
 }
 
 .mobile__menu{
@@ -110,7 +112,7 @@ header{
     cursor: pointer;
     width: 35px;
     height: 4px;
-    background-color: #45265e;
+    background-color: var(--menu--hover);
     margin: 6px;
     border-radius: 50px;
     
@@ -128,20 +130,20 @@ header{
     
 }
 .menu__mobile li a{
-    color: #ffff;
+    color: var(--colorfff);
     font-size: 35px;
    
 
 }
 .menu__mobile li a:hover{
-    color: #9815cc7a ;
+    color: var(--menu--hover);
 }
 
  
 
 
 @media screen and (max-width:730px) {
-   
+    
    
     .menu{
         display: flex;
@@ -186,6 +188,9 @@ header{
         width: 100%;
        
     }
+    .menu__mobile li a{
+        color: var(--colorfff);
+    }
     .open{
         display: block;
         filter: blur(0px);
@@ -197,51 +202,46 @@ header{
 /*-------------------*/
 
 #container__apresentacão{
- background: linear-gradient(rgba(236, 217, 241, 0.356), rgba(36, 35, 35, 0.205) ), url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/back-fundo.jpeg?raw=true );
-    background-size: cover;
     display: flex;
-    justify-content: center;
-    height: 120vh;
-    top: 100px;
+    background-image: url(/assets.img/Design\ sem\ nome\ \(3\).png);
+    background-size: cover;
     flex-wrap: wrap;
     width: 100%;
-    box-shadow: 5px 10px 28px 1px rgba(51, 1, 39, 0.815), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+    height: 70dvh;
+   
 }
 
 
 .apresentação{
     margin-top: 12rem;
-    width: 100%;
+    align-items: center;
     direction: flex;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+    
+    
+    margin-left: 18rem;
+}
+
+.img__design__fundo{
+    margin-top: 200px;
     
 }
+
 
 
 #hello__I__am{
     width: 100%;
     font-weight: 900;
     font-size: 50px;
-    color: #0d0911;
-    text-align: center;
+    color: var(--colorfff);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    
-
-    
-    
+    flex-direction: column;  
     
 }
 #hello__I__am ::after{
     content: '|';
     margin-left: 1px ;
     animation: blink 0.7s infinite;
-    color: #000000;
+    color: var(--color000);
 }
 
 .animation__img{
@@ -277,7 +277,7 @@ header{
 
 .name{
    
-    color: #47103e;
+    color: var(--border--color);
     font-weight: 900;
     font-size: 50px; 
 }
@@ -288,13 +288,13 @@ header{
     width: 100%;
     font-weight: 600;
     font-size: 35px;
-    color: #000000;
+    color: var(--colorfff);
     
 }
 .cor__text{
     font-weight: 900;
     font-size: 50px;
-    color: #580c3f;
+    color: var(--menu--hover);
 }
 
 
@@ -303,26 +303,26 @@ header{
     margin-top: 10px;
     margin-left: 5px;
     cursor: pointer;
-    background: #0b0d25f6;
+    background: var(--back--body--header);
     padding: 10px;
     border-radius: 10px;
     width: 170px;
-    color: #fff;
-    box-shadow: 1px 3px 3px #050505;
+    color: var(--colorfff);
+    box-shadow: 1px 3px 3px var(--color000);
 }
 
 .dowload__cv a{
-    color: #fff;
+    color: var(--colorfff);
 }
 
 .dowload__cv a:hover{
-    color: #070707;
+    color: var(--color000);
 }
 
 .dowload__cv:hover{
 
     background: #fdf6fa8f;
-    color: #070707;
+    color: var(--color000);
     box-shadow: inset 0 0 0 1px;
 }
 
@@ -330,16 +330,16 @@ header{
 .acess__lkd{
     cursor: pointer;
     background: rgba(88, 37, 71, 0.835);
-    color: #fff;
+    color: var(--colorfff);
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
     width: 180px;
-    box-shadow: 1px 3px 3px #050505;
+    box-shadow: 1px 3px 3px var(--color000);
 }
 
 .acess__lkd a{
-    color: #fff;
+    color: var(--colorfff);
     
 }
 
@@ -360,11 +360,18 @@ header{
         width: 100%;
         font-size: 45px;
         display: flex;
-       
+    
 
+    } 
+    .apresentação{
+        margin-left: 1rem;
     }
     
+
+    
+    
 }
+
 @media screen and (max-width:390px){
     .dowload__cv{
         width: 40%;
@@ -377,6 +384,11 @@ header{
         width: 40%;
 
     }
+    .apresentação{
+        margin-left: 1rem;
+        
+        
+    }
     
 
 }
@@ -388,20 +400,14 @@ header{
 
 
 #sobre{
-    
-    
     display: flex;
-    height: 90vh;
     flex-wrap: wrap;
     justify-content: center;
     text-align: start;
     width: 100%;
     align-items: center;
     display: flex;
-    color: #fff;
-    
-    
-    
+    color: var(--colorfff);    
 }
  
 
@@ -409,9 +415,9 @@ header{
 .abaut__me{
     
     border-radius: 10px;
-    box-shadow: 5px 10px 28px 1px rgba(51, 1, 39, 0.815), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+ 
     
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
     
@@ -443,6 +449,7 @@ header{
         align-items: center;
         margin: 20px;
         flex-direction: column;
+        
     }
     .name{ 
         width: 100%;
@@ -452,6 +459,12 @@ header{
 
     }
     
+}
+
+@media screen and (max-width: 376px) {
+    .abaut__me{
+        padding-top: 8rem;
+    }
 }
 
 
@@ -474,7 +487,7 @@ header{
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 45px;
-    color: #fff;
+    color: var(--colorfff);
     
    
     
@@ -486,9 +499,10 @@ header{
     flex-wrap: wrap;
     width: 50%;
     margin: 0 auto;
-    color: #fff;
+    color: var(--colorfff);
     padding: 20px;
     box-shadow: 5px 10px 28px 1px rgba(51, 1, 39, 0.815), 0 10px 10px rgba(0, 0, 0, 0.22) ;
+    border-radius: 10px;
 }
 .my__skils li{
     margin: 20px 0;
@@ -511,22 +525,22 @@ header{
 .bar span{
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgb(151, 52, 112)0%, rgba(252, 103, 1)100%);
+    background: linear-gradient(135deg, rgb(151, 52, 112)0%, rgb(68, 8, 70)00%);
 }
 .html {
-    width: 80%;
+    width: 100%;
     animation: html 3s;
 }
 .css {
-    width: 70%;
+    width: 100%;
     animation: css 3s;
 }
 .javascript {
-    width: 20%;
+    width: 80%;
     animation: javascript 3s;
 }
 .python {
-    width: 50%;
+    width: 90%;
     animation: python 3s;
 }
 
@@ -548,7 +562,7 @@ header{
         width: 0%;
     }
     100%{
-        width: 80%;
+        width: 100%;
     }
 }
 @keyframes css{
@@ -556,7 +570,7 @@ header{
         width: 0%;
     }
     100%{
-        width: 70%;
+        width: 100%;
     }
 }
 @keyframes javascript{
@@ -564,7 +578,7 @@ header{
         width: 0%;
     }
     100%{
-        width: 20%;
+        width: 80%;
     }
 }
 @keyframes python{
@@ -572,7 +586,7 @@ header{
         width: 0%;
     }
     100%{
-        width: 50%;
+        width: 90%;
     }
 }
 
@@ -602,6 +616,7 @@ header{
 
     
 }
+
 @media screen and (max-width:390px) {
     #box__hability{
         width: 100%;
@@ -625,29 +640,37 @@ header{
 }
 #projetos h2{
     
-    margin-top: 10vh;
+    padding-top: 12vh;
+    margin: 0;
     font-weight: 600;
     font-size: 45px;
     color: #fff;
 }
 .my__projects{ 
-    margin-bottom: 10vh;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto ;
     align-items: center;
-    width: 100%;
     justify-content: center;
+    width:59%;  
+    height: 20rem; 
+}
+.my__projects::-webkit-scrollbar-thumb{
+    background-color: transparent;
     
-    
+}
+.my__projects::-webkit-scrollbar-track{
+    background-color: transparent;
     
 }
 .pjct__one{ 
     cursor: pointer;
     margin: 5px;
-    margin-top: 10vh;
+    
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    min-width:110px ;
+    height: 110px;
+    
     background: rgba(3, 1, 12, 0.801);
     
     padding: 80px 80px 80px 80px;
@@ -658,13 +681,22 @@ header{
 
 
 .pjct__one:hover{
-    transform: scale(1.5,1.5);
+    transform: scale(1.1,1.1);
 
 }
-@media screen and (max-width: 735px) {
+
+@media screen and (max-width: 855px){
+    .my__projects{
+        width: 73%;
+    }
+}
+@media screen and (max-width: 475px) {
     #projetos{
         flex-direction: column;
         display: flex;
+        width: 100%;
+    }
+    .my__projects{
         width: 100%;
     }
     
@@ -681,7 +713,7 @@ header{
 
 
 #contatos{
-    
+    padding-top: 80px;
     justify-content: center;
     width: 100%;
     height: 100vh;
@@ -696,7 +728,7 @@ header{
     margin-top: 10vh;
     margin-top: 55px;
     font-weight: 600;
-    color: #fff;
+    color: var(--colorfff);
     font-size: 45px;
 }
 .container__contatos{
@@ -730,16 +762,16 @@ header{
     flex-wrap: wrap;
 }
 .ico__ct a{
-    color: #ffffff;
+    color: var(--colorfff);
     margin: 5px;
     font-size: 15px;
 }
 .ico__ct a p{
-    color: #ffffff;
+    color: var(--colorfff);
     font-size: 20px;
 }
 .ico__ct a p:hover{
-    color: #810959;
+    color: var(--menu--hover);
 
 }
 
@@ -778,18 +810,6 @@ header{
 }
 
 
-.container__botão__top{
-    cursor: pointer;
-    width: 40px;
-    z-index: 1;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    padding: 0;
-
-
-}
-
 .top{
     background: transparent;
     
@@ -797,6 +817,7 @@ header{
 
 
 .top a p{
+    background-color: var(--menu--hover);
     right: 10px;
     bottom: 10px;
     position: fixed;
@@ -805,8 +826,8 @@ header{
     padding: 10px;
     border-radius: 10px;
     width: 2%;
-    background-color: #8822b17a ;
-    color: #fff;
+    
+    color: var(--colorfff);
 }
 
 
@@ -834,74 +855,84 @@ header{
     width: 50px;
     position: fixed;
     top: 115px;
-    right: 10px;
+    right: 0px;
+    
 
 }
+
+
 .fa-sun{
-    color: #bbb4b4;
+    color: var(--colorfff);
 }
 .fa-moon{
     color: #380427;
 }
 
 .branco#pag .menu a{
-    color: white;
+    color: var(--colorfff);
 }
 .branco#pag{
-    background-color: rgb(183, 186, 199);
-    color: #000000;
+    background-color: #b7bac7;
+    color: var(--color000);
 
 }
 .branco#pag .menu__mobile{
-    background-color: white;
+    background-color: var(--colorfff);
     
 }
 .branco#pag #container__apresentacão{
-    background: linear-gradient(rgba(201, 142, 219, 0.301), rgba(0, 0, 0, 0.719) ), url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/back__fundo__sol.jpg?raw=true);
+    background-image: url(/assets.img/Design\ sem\ nome\ \(5\).png);
     background-size: cover;
-    box-shadow: 5px 10px 28px 1px rgba(51, 1, 39, 0.815), 0 10px 10px rgba(0, 0, 0, 0.22) ;
-    border-radius:10px ;
 }
 .branco#pag #container__apresentacão a{
-    color: white;
+    color: var(--colorfff);
 }
 .branco#pag .abaut__me {
     font-weight: 600;
-    color: #000000;
+    color: var(--color000);
 
 }
 .branco#pag h2 {
 
-    color: black;
+    color: var(--color000);
 }
 .branco#pag p{
-    color: #000000;
+    color: var(--color000);
 
 }
 .branco#pag a{
-    color: #000000;
+    color: var(--color000);
 }
 .branco#pag h3{
-    color: #000000;
+    color: var(--color000);
 }
 
 
 .branco#pag #projetos p{
-    color: #f8f8f8;
+    color: var(--colorfff);
 }
 
 .branco#pag .ico__ct a p:hover{
-    color: #810959;
+    color: var(--menu--hover);
 
 }
 
 .branco#pag .menu a:hover{
-    color: #9815cc7a;
+    color: var(--menu--hover);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
 
-
+::-webkit-scrollbar-thumb{
+    background-color: var(--border--color);
+}  
+::-webkit-scrollbar-track{
+    background-color: var(--colorfff);
     
+    
+}  
     
 
 
