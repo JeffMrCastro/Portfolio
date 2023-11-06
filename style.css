@@ -203,7 +203,7 @@ header{
 
 #container__apresentacão{
     display: flex;
-    background-image: url(/assets.img/Design\ sem\ nome\ \(3\).png);
+    background-image: url(assets.img/Design sem nome (3).png);
     background-size: cover;
     flex-wrap: wrap;
     width: 100%;
