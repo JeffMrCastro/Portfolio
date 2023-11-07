@@ -7,6 +7,7 @@
     --menu--hover: #9815cc7a;
     --colorfff:#fff;
     --color000: #000;
+    --colorred: #8d2536;
 }
 
 
@@ -40,7 +41,7 @@ header{
     text-align: center;
     justify-content: center;
     background-color: var(--back--body--header);
-    border-bottom:  1px solid var(--border--color);
+    border-bottom:  1px solid var(--colorred);
     padding: 1rem;
    
    
@@ -294,7 +295,7 @@ header{
 .cor__text{
     font-weight: 900;
     font-size: 50px;
-    color: var(--menu--hover);
+    color: var(--colorred) ;
 }
 
 
@@ -302,7 +303,7 @@ header{
     margin-top: 10px;
     margin-left: 5px;
     cursor: pointer;
-    background: rgb(116, 18, 5);
+    background: var(--colorred) ;
     
     border-radius: 10px;
     width: 9rem;
