@@ -203,7 +203,7 @@ header{
 
 #container__apresentacão{
     display: flex;
-    background-image: url(https://github.com/JeffMrCastro/portfolio/blob/main/assets.img/Design%20sem%20nome%20(3).png?raw=true);
+    background-image: url(assets/back__fundo__escuro.png);
     background-size: cover;
     flex-wrap: wrap;
     width: 100%;
@@ -881,7 +881,7 @@ header{
     
 }
 .branco#pag #container__apresentacão{
-    background-image: url(assets.img/Design\ sem\ nome\ \(5\).png);
+    background-image: url(assets/back__fundo__branco.png);
     background-size: cover;
 }
 .branco#pag #container__apresentacão a{
